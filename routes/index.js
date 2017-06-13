@@ -26,7 +26,6 @@ router.post("/insert", (req, res, next) => {
 
 router.get("/getdata", (req, res, next) => {
     itemData.find({}, (err, docs) => {
-        console.log({ itemListData: docs });
         res.render("index", { itemListData: docs });
     })
 });

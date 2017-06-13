@@ -1,4 +1,10 @@
-<form action="/updateItem/{{this.id}}" method="post">
-    <input type="text" name="item">
-    <button type="Submit">Submit</button>
+<form class="form" action="/updateItem/{{this.id}}" method="post">
+    <div class="row">
+        <div class="col-md-11">
+            <input class="form-control" type="text" name="item">
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-danger pull-right" type="Submit">Submit</button>
+        </div>
+    </div>
 </form>
